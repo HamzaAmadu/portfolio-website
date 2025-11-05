@@ -45,6 +45,36 @@
             background: #2c3e50;
             color: white;
         }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .cta-buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+        .btn.secondary {
+            background: transparent;
+            border: 2px solid white;
+        }
     </style>
 </head>
 <body>
@@ -54,11 +84,24 @@
     </div>
 
     <div class="nav">
-    <a href="index.html">Home</a>
-    <a href="resume.html">Resume</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-</div>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Hamza Amadu" class="profile-pic">
+            <h1>Hamza Amadu</h1>
+            <h2>Computer Technology Student</h2>
+            <p>Bowie State University | Expected Graduation: 2026 | GPA: 3.255</p>
+            <div class="cta-buttons">
+                <a href="projects.html" class="btn">View My Projects</a>
+                <a href="resume.html" class="btn secondary">See My Resume</a>
+            </div>
+        </div>
+    </section>
 
     <div class="container">
         <div class="section">
