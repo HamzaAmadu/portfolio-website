@@ -182,6 +182,72 @@
             margin-bottom: 10px;
         }
         
+        .btn {
+            display: inline-block;
+            background: #1a2a6c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: #FF8C00;
+            transform: translateY(-2px);
+        }
+        
+        .qr-code {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .qr-code img {
+            max-width: 200px;
+            border: 3px solid #1a2a6c;
+            border-radius: 10px;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 30px;
+        }
+        
         @media (max-width: 768px) {
             .nav-container {
                 flex-wrap: wrap;
@@ -207,8 +273,10 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="#home">Home</a>
-            <a href="#resume">Resume</a>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
@@ -231,13 +299,17 @@
                     <span>itshamzasmail@gmail.com</span>
                 </div>
             </div>
+            <div class="qr-code">
+                <h3>Scan to visit my portfolio</h3>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://hamzaamadu.github.io/portfolio" alt="QR Code">
+            </div>
         </section>
         
-        <section id="resume" class="section">
-            <h2>Professional Summary</h2>
+        <section id="about" class="section">
+            <h2>About Me</h2>
             <div class="summary">
-                <p>Motivated Computer Technology student with a solid understanding of database management, software development, and web development. Ability to design, build, and deploy functional applications and websites through hands-on academic projects.</p>
-                <p>Proactive learner currently expanding expertise through self-study for industry-recognized certifications. Seeking an entry-level IT or software development role to apply technical skills and grow within a professional team.</p>
+                <p>I am a motivated Computer Technology student at Bowie State University with a solid understanding of database management, software development, and web development. Through hands-on academic projects, I've developed the ability to design, build, and deploy functional applications and websites.</p>
+                <p>As a proactive learner, I'm currently expanding my expertise through self-study for industry-recognized certifications. I'm seeking an entry-level IT or software development role where I can apply my technical skills and grow within a professional team environment.</p>
             </div>
             
             <h2 style="margin-top: 30px;">Technical Skills</h2>
@@ -256,7 +328,7 @@
                 <div class="skill-category">
                     <h3>Software & Tools</h3>
                     <ul class="skill-list">
-                        <li>Microsoft Office </li>
+                        <li>Microsoft Office</li>
                         <li>MIT App Inventor</li>
                         <li>VirtualBox/VMware</li>
                         <li>Git & GitHub</li>
@@ -274,15 +346,62 @@
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Certifications Planned to take</h3>
+                    <h3>Certifications Planned</h3>
                     <ul class="skill-list">
                         <li>CompTIA A+</li>
                         <li>Google IT Support</li>
                     </ul>
                 </div>
             </div>
-            
-            <h2 style="margin-top: 30px;">Education</h2>
+        </section>
+        
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Landscaping Company Website</h3>
+                    <p><strong>Full-Stack Web Development</strong></p>
+                    <p>Designed and developed a dynamic website for a landscaping company that processes service requests and calculates quotes.</p>
+                    <p>Created a backend database to store customer information and service details from web form submissions.</p>
+                    <a href="https://github.com/HamzaAmadu/landscaping-website" class="btn">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Fast Food E-Commerce Website</h3>
+                    <p><strong>Frontend Development</strong></p>
+                    <p>Built an interactive fast-food ordering website that displays menu items and allows users to select products.</p>
+                    <p>Implemented JavaScript functions to dynamically calculate order totals, tax, and final cost based on user input.</p>
+                    <a href="https://github.com/HamzaAmadu/fastfood-website" class="btn">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Student Assignment Tracker</h3>
+                    <p><strong>Mobile App Development</strong></p>
+                    <p>Designed and developed a functional mobile application to help students manage assignment deadlines and track study time.</p>
+                    <p>Utilized MIT App Inventor's block-based programming environment to implement app logic and UI components.</p>
+                    <a href="https://github.com/HamzaAmadu/assignment-tracker" class="btn">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Password Security Website</h3>
+                    <p><strong>Educational Web Application</strong></p>
+                    <p>Created an interactive educational website teaching password security best practices.</p>
+                    <p>Implemented multi-page navigation, password strength testing, and visual feedback systems.</p>
+                    <a href="https://github.com/HamzaAmadu/password-security-guide-website" class="btn">View on GitHub</a>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Number Analysis Program</h3>
+                    <p><strong>Python Programming</strong></p>
+                    <p>Developed a Python program that finds the minimum and maximum values from 10 user-input numbers.</p>
+                    <p>Implemented robust error handling to manage invalid inputs and edge cases effectively.</p>
+                    <a href="https://github.com/HamzaAmadu/number-analysis" class="btn">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="resume" class="section">
+            <h2>Resume</h2>
             <div class="education-card">
                 <div class="education-icon">🎓</div>
                 <div class="education-details">
@@ -293,41 +412,66 @@
                     <p><strong>Relevant Coursework:</strong> Software Development, Web Design, Database Systems, Computer Architecture, Network Fundamentals, Cybersecurity Principles</p>
                 </div>
             </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="Hamza_Amadu_Resume.pdf" class="btn" download>Download PDF Resume</a>
+                <a href="#resume-preview" class="btn">View Online Resume</a>
+            </div>
+            
+            <div id="resume-preview" style="margin-top: 40px;">
+                <h3>Professional Summary</h3>
+                <p>Motivated Computer Technology student with a solid understanding of database management, software development, and web development. Ability to design, build, and deploy functional applications and websites through hands-on academic projects.</p>
+                <p>Proactive learner currently expanding expertise through self-study for industry-recognized certifications. Seeking an entry-level IT or software development role to apply technical skills and grow within a professional team.</p>
+                
+                <h3 style="margin-top: 20px;">Technical Skills</h3>
+                <p><strong>Programming Languages:</strong> Python, Java, HTML, CSS, JavaScript</p>
+                <p><strong>Software & Tools:</strong> Microsoft Office, MIT App Inventor, VirtualBox/VMware, Git & GitHub</p>
+                <p><strong>Development Concepts:</strong> Web Development, Database Design & Integration, PC Hardware & Components, Network Fundamentals</p>
+                <p><strong>Certifications Planned:</strong> CompTIA A+, Google IT Support</p>
+                
+                <h3 style="margin-top: 20px;">Projects</h3>
+                <p><strong>Landscaping Company Website:</strong> Full-stack website with database integration</p>
+                <p><strong>Fast Food E-Commerce:</strong> Interactive ordering system with JavaScript</p>
+                <p><strong>Student Assignment Tracker:</strong> Mobile app for academic organization</p>
+                <p><strong>Password Security Education:</strong> Interactive learning platform</p>
+                <p><strong>Number Analysis Program:</strong> Python application with error handling</p>
+                
+                <div class="qr-code" style="margin-top: 30px;">
+                    <h3>Scan QR Code to Visit Portfolio</h3>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hamzaamadu.github.io/portfolio" alt="QR Code">
+                </div>
+            </div>
         </section>
         
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Landscaping Company Full-Stack Website</h3>
-                    <p><strong>Academic Project</strong></p>
-                    <p>Designed and developed a dynamic website for a landscaping company that processes service requests and calculates quotes.</p>
-                    <p>created a backend database to store customer information and service details from web form submissions.</p>
-                    <p>Integrated front-end with back-end functionality to create a seamless user experience.</p>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
                 </div>
-                
-                <div class="project-card">
-                    <h3>Fast Food E-Commerce Website</h3>
-                    <p><strong>Academic Project</strong></p>
-                    <p>Built an interactive fast-food ordering website that displays menu items and allows users to select products.</p>
-                    <p>Implemented JavaScript functions to dynamically calculate order totals, tax, and final cost based on user input.</p>
-                    <p>Combined HTML, CSS, and JavaScript to create a cohesive and functional user interface.</p>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email">
                 </div>
-                
-                <div class="project-card">
-                    <h3>Student Assignment Tracker Mobile App</h3>
-                    <p><strong>Academic Project</strong></p>
-                    <p>Designed and developed a functional mobile application to help students manage assignment deadlines and track study time.</p>
-                    <p>Utilized MIT App Inventor's block-based programming environment to implement app logic and user interface components.</p>
-                    <p>Focused on creating an intuitive user experience to improve student organization and time management.</p>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your Message"></textarea>
                 </div>
-                
-                <div class="project-card">
-                    <h3>Password Security Educational Website</h3>
-                    <p><strong>Personal Project</strong></p>
-                    <p>Created an interactive educational website teaching password security best practices.</p>
-                    <p>Implemented multi-page navigation, password strength testing, and visual feedback systems.</p>
-                    <p>Designed responsive UI with CSS animations and deployed via GitHub Pages.</p>
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+            
+            <div style="margin-top: 40px; text-align: center;">
+                <h3>Direct Contact</h3>
+                <div class="contact-info" style="justify-content: center; margin-top: 15px;">
+                    <div class="contact-item">
+                        <span>✉️</span>
+                        <span>itshamzasmail@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <span>240-703-0352</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -341,6 +485,11 @@
         language-code="en"
     ></df-messenger>
 
+    <footer>
+        <p>© 2024 Hamza Amadu | Portfolio</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/hamza-amadu" style="color: white;">LinkedIn</a> | View my projects on <a href="https://github.com/HamzaAmadu" style="color: white;">GitHub</a></p>
+    </footer>
+
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -349,6 +498,12 @@
                     behavior: 'smooth'
                 });
             });
+        });
+        
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
         });
     </script>
 </body>
