@@ -421,40 +421,12 @@
             
             <div style="text-align: center; margin-top: 30px;">
                 <a href="Hamza_Amadu_resume.pdf" class="btn" download>Download PDF Resume</a>
-                <button onclick="showPDF()" class="btn">View Online Resume</button>
                 <a href="Hamza_Amadu_resume.pdf" target="_blank" class="btn">Open in New Tab</a>
             </div>
             
-            <div id="pdf-viewer" style="display: none; margin-top: 30px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                    <h3>Resume Preview</h3>
-                    <button onclick="hidePDF()" class="btn" style="background: #b21f1f;">Close Viewer</button>
-                </div>
-                <iframe src="Hamza_Amadu_resume.pdf" width="100%" height="600px" style="border: 2px solid #1a2a6c; border-radius: 10px;"></iframe>
-            </div>
-            
-            <div id="resume-preview">
-                <h3 style="margin-top: 30px;">Professional Summary</h3>
-                <p>Motivated Computer Technology student with a solid understanding of database management, software development, and web development. Ability to design, build, and deploy functional applications and websites through hands-on academic projects.</p>
-                <p>Proactive learner currently expanding expertise through self-study for industry-recognized certifications. Seeking an entry-level IT or software development role to apply technical skills and grow within a professional team.</p>
-                
-                <h3 style="margin-top: 20px;">Technical Skills</h3>
-                <p><strong>Programming Languages:</strong> Python, Java, HTML, CSS, JavaScript</p>
-                <p><strong>Software & Tools:</strong> Microsoft Office, MIT App Inventor, VirtualBox/VMware, Git & GitHub</p>
-                <p><strong>Development Concepts:</strong> Web Development, Database Design & Integration, PC Hardware & Components, Network Fundamentals</p>
-                <p><strong>Certifications Planned:</strong> CompTIA A+, Google IT Support</p>
-                
-                <h3 style="margin-top: 20px;">Projects</h3>
-                <p><strong>Landscaping Company Website:</strong> Full-stack website with database integration</p>
-                <p><strong>Fast Food E-Commerce:</strong> Interactive ordering system with JavaScript</p>
-                <p><strong>Student Assignment Tracker:</strong> Mobile app for academic organization</p>
-                <p><strong>Password Security Education:</strong> Interactive learning platform</p>
-                <p><strong>Number Analysis Program:</strong> Python application with error handling</p>
-                
-                <div class="qr-code" style="margin-top: 30px;">
-                    <h3>Scan QR Code to Visit Portfolio</h3>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hamzaamadu.github.io/portfolio-website" alt="QR Code">
-                </div>
+            <div class="qr-code" style="margin-top: 30px;">
+                <h3>Scan QR Code to Visit Portfolio</h3>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hamzaamadu.github.io/portfolio-website" alt="QR Code">
             </div>
         </section>
         
@@ -520,16 +492,6 @@
             alert('Thank you for your message! I will get back to you soon.');
             this.reset();
         });
-
-        function showPDF() {
-            document.getElementById('pdf-viewer').style.display = 'block';
-            document.getElementById('resume-preview').style.display = 'none';
-        }
-        
-        function hidePDF() {
-            document.getElementById('pdf-viewer').style.display = 'none';
-            document.getElementById('resume-preview').style.display = 'block';
-        }
     </script>
 </body>
 </html>
